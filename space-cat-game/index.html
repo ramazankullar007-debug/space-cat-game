@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Космический Кот</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background: #000; 
+            color: white;
+            font-family: Arial;
+        }
+        canvas { 
+            display: block; 
+            background: #000;
+        }
+        #startScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            z-index: 100;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #FFA500;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="startScreen">
+        <h1>КОСМИЧЕСКИЙ КОТ</h1>
+        <button id="startButton">СТАРТ</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
